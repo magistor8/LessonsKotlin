@@ -1353,6 +1353,7 @@ dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
+dimen city_name_margin_top
 dimen clock_face_margin_start
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
@@ -1414,6 +1415,7 @@ dimen disabled_alpha_material_light
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
+dimen feels_like_text_size
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -1424,6 +1426,7 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen margin_15_dp
 dimen material_bottom_sheet_max_width
 dimen material_clock_display_padding
 dimen material_clock_face_margin_top
@@ -1669,6 +1672,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen temperature_value_text_size
 dimen test_mtrl_calendar_day_cornerSize
 dimen test_navigation_bar_active_item_max_width
 dimen test_navigation_bar_active_item_min_width
@@ -1943,6 +1947,8 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id cityCoordinates
+id cityName
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2006,6 +2012,8 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id feelsLikeLabel
+id feelsLikeValue
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2057,7 +2065,9 @@ id line3
 id linear
 id listMode
 id list_item
+id loadingLayout
 id mainFragment
+id mainView
 id masked
 id match_constraint
 id match_parent
@@ -2236,6 +2246,8 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id temperatureLabel
+id temperatureValue
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2485,11 +2497,13 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
+string city_coordinates
 string clear_text_end_icon_content_description
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string feels_like_label
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -2555,6 +2569,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string temperature_label
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

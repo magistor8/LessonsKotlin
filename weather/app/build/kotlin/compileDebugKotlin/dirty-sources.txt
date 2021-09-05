@@ -1,3 +1,0 @@
-C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\java\com\magistor8\weather\view\MainActivity.kt
-C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\java\com\magistor8\weather\view\MainFragment.kt
-C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\java\com\magistor8\weather\view_model\MainViewModel.kt

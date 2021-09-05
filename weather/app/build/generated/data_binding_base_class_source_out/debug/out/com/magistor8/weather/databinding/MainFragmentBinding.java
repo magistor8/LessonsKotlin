@@ -4,25 +4,65 @@ package com.magistor8.weather.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.magistor8.weather.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class MainFragmentBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final FrameLayout rootView;
 
-  private MainFragmentBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final TextView cityCoordinates;
+
+  @NonNull
+  public final TextView cityName;
+
+  @NonNull
+  public final TextView feelsLikeLabel;
+
+  @NonNull
+  public final TextView feelsLikeValue;
+
+  @NonNull
+  public final FrameLayout loadingLayout;
+
+  @NonNull
+  public final ConstraintLayout mainView;
+
+  @NonNull
+  public final TextView temperatureLabel;
+
+  @NonNull
+  public final TextView temperatureValue;
+
+  private MainFragmentBinding(@NonNull FrameLayout rootView, @NonNull TextView cityCoordinates,
+      @NonNull TextView cityName, @NonNull TextView feelsLikeLabel,
+      @NonNull TextView feelsLikeValue, @NonNull FrameLayout loadingLayout,
+      @NonNull ConstraintLayout mainView, @NonNull TextView temperatureLabel,
+      @NonNull TextView temperatureValue) {
     this.rootView = rootView;
+    this.cityCoordinates = cityCoordinates;
+    this.cityName = cityName;
+    this.feelsLikeLabel = feelsLikeLabel;
+    this.feelsLikeValue = feelsLikeValue;
+    this.loadingLayout = loadingLayout;
+    this.mainView = mainView;
+    this.temperatureLabel = temperatureLabel;
+    this.temperatureValue = temperatureValue;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +83,63 @@ public final class MainFragmentBinding implements ViewBinding {
 
   @NonNull
   public static MainFragmentBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.cityCoordinates;
+      TextView cityCoordinates = ViewBindings.findChildViewById(rootView, id);
+      if (cityCoordinates == null) {
+        break missingId;
+      }
 
-    return new MainFragmentBinding((ConstraintLayout) rootView);
+      id = R.id.cityName;
+      TextView cityName = ViewBindings.findChildViewById(rootView, id);
+      if (cityName == null) {
+        break missingId;
+      }
+
+      id = R.id.feelsLikeLabel;
+      TextView feelsLikeLabel = ViewBindings.findChildViewById(rootView, id);
+      if (feelsLikeLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.feelsLikeValue;
+      TextView feelsLikeValue = ViewBindings.findChildViewById(rootView, id);
+      if (feelsLikeValue == null) {
+        break missingId;
+      }
+
+      id = R.id.loadingLayout;
+      FrameLayout loadingLayout = ViewBindings.findChildViewById(rootView, id);
+      if (loadingLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.mainView;
+      ConstraintLayout mainView = ViewBindings.findChildViewById(rootView, id);
+      if (mainView == null) {
+        break missingId;
+      }
+
+      id = R.id.temperatureLabel;
+      TextView temperatureLabel = ViewBindings.findChildViewById(rootView, id);
+      if (temperatureLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.temperatureValue;
+      TextView temperatureValue = ViewBindings.findChildViewById(rootView, id);
+      if (temperatureValue == null) {
+        break missingId;
+      }
+
+      return new MainFragmentBinding((FrameLayout) rootView, cityCoordinates, cityName,
+          feelsLikeLabel, feelsLikeValue, loadingLayout, mainView, temperatureLabel,
+          temperatureValue);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
