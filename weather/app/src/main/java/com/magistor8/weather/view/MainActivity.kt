@@ -3,6 +3,7 @@ package com.magistor8.weather.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.magistor8.weather.R
+import com.magistor8.weather.view.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,7 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction().replace(R.id.mainFragment, MainFragment.newInstance()).commit()
+            supportFragmentManager.beginTransaction().replace(R.id.container,
+                MainFragment.newInstance()
+
+            ).addToBackStack("").commit()
         }
     }
 }

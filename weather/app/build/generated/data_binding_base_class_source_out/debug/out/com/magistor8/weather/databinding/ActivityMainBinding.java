@@ -20,12 +20,11 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FrameLayout mainFragment;
+  public final FrameLayout container;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FrameLayout mainFragment) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull FrameLayout container) {
     this.rootView = rootView;
-    this.mainFragment = mainFragment;
+    this.container = container;
   }
 
   @Override
@@ -55,13 +54,13 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.mainFragment;
-      FrameLayout mainFragment = ViewBindings.findChildViewById(rootView, id);
-      if (mainFragment == null) {
+      id = R.id.container;
+      FrameLayout container = ViewBindings.findChildViewById(rootView, id);
+      if (container == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, mainFragment);
+      return new ActivityMainBinding((ConstraintLayout) rootView, container);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
