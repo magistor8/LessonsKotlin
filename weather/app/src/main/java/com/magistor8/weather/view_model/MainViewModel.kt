@@ -2,12 +2,11 @@ package com.magistor8.weather.view_model
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.magistor8.weather.domain_model.Weather
 import com.magistor8.weather.repository.Repository
 import com.magistor8.weather.repository.RepositoryImpl
 import java.lang.IllegalArgumentException
 import java.lang.Thread.sleep
-import java.util.*
-import kotlin.random.Random
 
 class MainViewModel(
     private val liveDataToObserve: MutableLiveData<AppState> = MutableLiveData(),
@@ -16,21 +15,25 @@ class MainViewModel(
 
     fun getLiveData() = liveDataToObserve
 
-    fun getWeatherFromLocalSource() = getDataFromLocalSource()
+    fun getWeatherFromLocalSourceRus() = getDataFromLocalSource(isRussian = true)
 
-    fun getWeatherFromRemoteSource() = getDataFromLocalSource()
+    fun getWeatherFromLocalSourceWorld() = getDataFromLocalSource(isRussian = false)
 
-    private fun getDataFromLocalSource() {
+    private fun getDataFromLocalSource(isRussian: Boolean) {
+        var weatherData: List<Weather>
         liveDataToObserve.value = AppState.Loading
         Thread {
             sleep(3000)
             if ((1..2).random() == 1) {
-                val weatherData = repositoryImpl.getWeatherFromLocalStorage()
+                weatherData = if (isRussian) {
+                    repositoryImpl.getWeatherFromLocalStorageRus()
+                } else {
+                    repositoryImpl.getWeatherFromLocalStorageWorld()
+                }
                 liveDataToObserve.postValue(AppState.Success(weatherData))
             } else {
                 liveDataToObserve.postValue(AppState.Error(IllegalArgumentException()))
             }
-
         }.start()
     }
 
