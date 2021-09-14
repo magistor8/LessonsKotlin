@@ -2079,6 +2079,7 @@ id mainFragmentFAB
 id mainFragmentLoadingLayout
 id mainFragmentRecyclerItemTextView
 id mainFragmentRecyclerView
+id mainFragmentRootView
 id mainView
 id masked
 id match_constraint

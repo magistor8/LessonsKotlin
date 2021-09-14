@@ -1,7 +1,7 @@
-com/magistor8/weather/databinding/FragmentMainBinding.java
- com.magistor8.weather.databinding.FragmentMainBinding
 com/magistor8/weather/BuildConfig.java
  com.magistor8.weather.BuildConfig
+com/magistor8/weather/databinding/FragmentMainBinding.java
+ com.magistor8.weather.databinding.FragmentMainBinding
 com/magistor8/weather/databinding/FragmentDetailsBinding.java
  com.magistor8.weather.databinding.FragmentDetailsBinding
 com/magistor8/weather/databinding/ActivityMainBinding.java

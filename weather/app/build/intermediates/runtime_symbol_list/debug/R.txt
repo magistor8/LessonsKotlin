@@ -2078,6 +2078,7 @@ int id mainFragmentFAB 0x7f0800ed
 int id mainFragmentLoadingLayout 0x7f0800ee
 int id mainFragmentRecyclerItemTextView 0x7f0800ef
 int id mainFragmentRecyclerView 0x7f0800f0
+int id mainFragmentRootView 0x7f0801e0
 int id mainView 0x7f0800f1
 int id masked 0x7f0800f2
 int id match_constraint 0x7f0800f3
