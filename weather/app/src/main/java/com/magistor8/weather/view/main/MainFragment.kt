@@ -14,6 +14,7 @@ import com.magistor8.weather.domain_model.Weather
 import com.magistor8.weather.view.details.DetailFragment
 import com.magistor8.weather.view_model.AppState
 import com.magistor8.weather.view_model.MainViewModel
+import java.lang.IllegalArgumentException
 
 class MainFragment: Fragment() {
 
@@ -22,10 +23,28 @@ class MainFragment: Fragment() {
     get(){
         return _binding!!
     }
-
+    private var data: AppState = AppState.Null
     private val viewModel: MainViewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
     }
+    private val listener by lazy {
+        object : OnItemViewClickListener {
+        override fun onItemViewClick(weather: Weather) {
+            activity?.supportFragmentManager?.apply {
+                this.let {
+                    Bundle().apply {
+                        putParcelable(DetailFragment.BUNDLE_EXTRA, weather)
+                        beginTransaction()
+                            .replace(R.id.container, DetailFragment.newInstance(this))
+                            .addToBackStack("")
+                            .commit()
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     private val adapter = MainFragmentAdapter()
     private var isDataSetRus: Boolean = true
 
@@ -39,21 +58,7 @@ class MainFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
-        adapter.setListener(object : OnItemViewClickListener {
-            override fun onItemViewClick(weather: Weather) {
-                activity?.supportFragmentManager?.apply {
-                    this.let {
-                        Bundle().apply {
-                            putParcelable(DetailFragment.BUNDLE_EXTRA, weather)
-                            beginTransaction()
-                                .replace(R.id.container, DetailFragment.newInstance(this))
-                                .addToBackStack("")
-                                .commit()
-                        }
-                    }
-                }
-            }
-        })
+        adapter.setListener(listener)
         return binding.root
     }
 
@@ -61,9 +66,15 @@ class MainFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.mainFragmentRecyclerView.adapter = adapter
         binding.mainFragmentFAB.setOnClickListener { changeWeatherDataSet() }
-        val observer = Observer<AppState> { renderData(it) }
+        val observer = Observer<AppState> {
+            data = it
+            renderData(data)
+        }
         viewModel.getLiveData().observe(viewLifecycleOwner, observer)
-        viewModel.getWeatherFromLocalSourceRus()
+        when (data) {
+            is AppState.Null -> viewModel.getWeatherFromLocalSourceRus()
+            else -> renderData(data)
+        }
     }
 
     private fun changeWeatherDataSet() {
@@ -104,6 +115,7 @@ class MainFragment: Fragment() {
                         { reloadData() }
                     )
                 }
+                is AppState.Null -> renderData(AppState.Error(IllegalArgumentException()))
             }
         }
     }
