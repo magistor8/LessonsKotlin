@@ -127,16 +127,15 @@ class MainFragment: Fragment() {
         binding.mainFragmentFAB.visibility = View.VISIBLE
     }
 
-    private fun View.showSnackBar(
-        text: String,
-        actionText: String,
-        action: (View) -> Unit,
-        length: Int = Snackbar.LENGTH_INDEFINITE
-    ) {
-        Snackbar.make(this, text, length).setAction(actionText, action).show()
-    }
+}
 
-
+fun View.showSnackBar(
+    text: String,
+    actionText: String,
+    action: (View) -> Unit,
+    length: Int = Snackbar.LENGTH_INDEFINITE
+) {
+    Snackbar.make(this, text, length).setAction(actionText, action).show()
 }
 
 interface OnItemViewClickListener {
