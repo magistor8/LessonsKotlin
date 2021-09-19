@@ -15,7 +15,7 @@
 11-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:5-24:19
+13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:5-27:19
 14        android:allowBackup="true"
 14-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -52,6 +52,10 @@
 31-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:27-74
 32            </intent-filter>
 33        </activity>
-34    </application>
-35
-36</manifest>
+34
+35        <service android:name="com.magistor8.weather.view.details.DetailsService" />
+35-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:25:9-64
+35-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:25:18-61
+36    </application>
+37
+38</manifest>

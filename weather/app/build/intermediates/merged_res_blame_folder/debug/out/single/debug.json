@@ -68,12 +68,12 @@
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\drawable_rus.png.flat",
-        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\drawable\\rus.png"
-    },
-    {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\xml_backup_descriptor.xml.flat",
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\xml\\backup_descriptor.xml"
+    },
+    {
+        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\drawable_rus.png.flat",
+        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\drawable\\rus.png"
     },
     {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -100,11 +100,11 @@
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\drawable\\ic_cloudy_day.xml"
     },
     {
-        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     }
 ]

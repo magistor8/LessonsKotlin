@@ -24,7 +24,7 @@ class MainViewModel(
         liveDataToObserve.value = AppState.Loading
         Thread {
             sleep(3000)
-            if ((1..2).random() == 1) {
+            if ((1..5).random() > 1) {
                 weatherData = if (isRussian) {
                     repositoryImpl.getWeatherFromLocalStorageRus()
                 } else {
