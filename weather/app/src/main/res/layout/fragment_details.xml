@@ -6,96 +6,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:gravity="top|center"
-    android:padding="20dp"
-    tools:style="@style/Theme.Weather.Autumn"
-    android:theme="@style/Details">
+    android:theme="@style/Details"
+    tools:background="@drawable/autumn">
+
+    <FrameLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/mainView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="top|center">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_cloudy_day"
-            android:layout_marginTop="50dp"
-            android:scaleType="fitXY"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/cityName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="50sp"
-            android:text="City"
-            />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/condition"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textSize="15sp"
-            android:text="condition"
-            />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top|center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_cloudy_day"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="45sp"
+                android:text="City"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:text="condition"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="100sp"
+                    android:fontFamily="sans-serif"
+                    android:text="4"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dp"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="10dp">
+            android:paddingBottom="10dp">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/temp"
-                android:layout_width="wrap_content"
+            <include
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textSize="100sp"
-                android:fontFamily="sans-serif"
-                android:text="4"/>
+                android:layout_weight="1"
+                layout="@layout/details_wind" />
+            <include
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/details_liq" />
+            <include
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/details_feels_like" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="50sp"
-                android:fontFamily="sans-serif"
-                android:layout_gravity="top"
-                android:layout_marginTop="10dp"
-                android:text="0"/>
 
         </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <include
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            layout="@layout/details_wind" />
-        <include
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            layout="@layout/details_liq" />
-        <include
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            layout="@layout/details_feels_like" />
 
 
-    </LinearLayout>
 
 </LinearLayout>
+
+

@@ -8,7 +8,7 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/wind"
+            android:src="@drawable/liq"
             android:tint="@color/white"
             android:scaleType="fitXY"/>
 
@@ -17,16 +17,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="15sp"
-            android:text="wind"
+            android:text="humidity"
             />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/humidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textSize="15sp"
             android:fontFamily="sans-serif"
-            android:text="10 км/ч"
+            android:text="85 %"
             />
 
 
