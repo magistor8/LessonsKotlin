@@ -327,6 +327,7 @@ attr counterOverflowTextColor
 attr counterTextAppearance
 attr counterTextColor
 attr crossfade
+attr css
 attr currentState
 attr curveFit
 attr customBoolean
@@ -878,6 +879,7 @@ attr suffixText
 attr suffixTextAppearance
 attr suffixTextColor
 attr suggestionRowLayout
+attr svg
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
@@ -1362,6 +1364,7 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen condition_text_size
 dimen default_dimension
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -1794,6 +1797,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable emoticons
 drawable ic_clock_black_24dp
 drawable ic_cloudy_day
 drawable ic_keyboard_black_24dp
@@ -1803,6 +1807,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable liq
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1842,6 +1847,7 @@ drawable summer
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable wind
 drawable winter
 drawable world
 id ALT
@@ -1967,7 +1973,9 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id coil_request_manager
 id collapseActionView
+id condition
 id confirm_button
 id constraint
 id container
@@ -2027,6 +2035,7 @@ id expanded_menu
 id fade
 id feelsLikeLabel
 id feelsLikeValue
+id feels_like
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2053,6 +2062,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id humidity
 id icon
 id icon_group
 id ifRoom
@@ -2067,6 +2077,8 @@ id inward
 id italic
 id itemContainer
 id item_touch_helper_previous_elevation
+id iv
+id ivHeader
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2264,6 +2276,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id temp
 id temperatureLabel
 id temperatureValue
 id test_checkbox_android_button_tint
@@ -2315,7 +2328,9 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id weatherCondition
 id west
+id wind
 id withText
 id withinBounds
 id wrap
@@ -2408,8 +2423,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout details_feels_like
+layout details_liq
+layout details_wind
 layout fragment_details
-layout fragment_details2
+layout fragment_details3
 layout fragment_main
 layout fragment_main_recycler_item
 layout material_chip_input_combo
@@ -2483,8 +2501,15 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string EmptyData
 string Error
+string ErrorConnection
+string ErrorURL
+string NullData
+string NullIntent
 string Reload
+string ServerWithNullParams
+string WrongURL
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2601,7 +2626,6 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
-style Autumn
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2825,6 +2849,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style Details
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
@@ -3061,6 +3086,10 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_Weather
+style Theme_Weather_Autumn
+style Theme_Weather_Spring
+style Theme_Weather_Summer
+style Theme_Weather_Winter
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -3427,6 +3456,7 @@ styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable SVGImageView css svg
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
@@ -3460,6 +3490,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml backup_descriptor
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

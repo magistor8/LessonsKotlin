@@ -14,7 +14,33 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Autumn">
-        <item name="android:background">@drawable/autumn</item>
+    <style name="Details" parent="Theme.Weather">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
+
+    <style name="Theme.Weather.Autumn">
+        <item name="colorPrimary">#C91E00</item>
+        <item name="colorPrimaryVariant">#A01800</item>
+        <item name="android:navigationBarColor">#A01800</item>
+    </style>
+
+    <style name="Theme.Weather.Summer">
+        <item name="colorPrimary">#CEE300</item>
+        <item name="colorPrimaryVariant">#B7C300</item>
+        <item name="android:navigationBarColor">#CEE300</item>
+    </style>
+
+    <style name="Theme.Weather.Spring">
+        <item name="colorPrimary">#1EDE00</item>
+        <item name="colorPrimaryVariant">#149700</item>
+        <item name="android:navigationBarColor">#1EDE00</item>
+    </style>
+
+    <style name="Theme.Weather.Winter">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="android:navigationBarColor">@color/purple_500</item>
+    </style>
+
 </resources>

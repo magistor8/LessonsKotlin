@@ -1,11 +1,17 @@
-com/magistor8/weather/BuildConfig.java
- com.magistor8.weather.BuildConfig
-com/magistor8/weather/databinding/FragmentDetails2Binding.java
- com.magistor8.weather.databinding.FragmentDetails2Binding
+com/magistor8/weather/databinding/DetailsLiqBinding.java
+ com.magistor8.weather.databinding.DetailsLiqBinding
+com/magistor8/weather/databinding/FragmentDetails3Binding.java
+ com.magistor8.weather.databinding.FragmentDetails3Binding
+com/magistor8/weather/databinding/DetailsFeelsLikeBinding.java
+ com.magistor8.weather.databinding.DetailsFeelsLikeBinding
 com/magistor8/weather/databinding/FragmentMainBinding.java
  com.magistor8.weather.databinding.FragmentMainBinding
+com/magistor8/weather/BuildConfig.java
+ com.magistor8.weather.BuildConfig
 com/magistor8/weather/databinding/FragmentDetailsBinding.java
  com.magistor8.weather.databinding.FragmentDetailsBinding
+com/magistor8/weather/databinding/DetailsWindBinding.java
+ com.magistor8.weather.databinding.DetailsWindBinding
 com/magistor8/weather/databinding/ActivityMainBinding.java
  com.magistor8.weather.databinding.ActivityMainBinding
 com/magistor8/weather/databinding/FragmentMainRecyclerItemBinding.java

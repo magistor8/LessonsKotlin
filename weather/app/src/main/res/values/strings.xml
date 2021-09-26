@@ -5,4 +5,11 @@
     <string name="city_coordinates">lt/ln: %s, %s"</string>
     <string name="Error">Error</string>
     <string name="Reload">Reload</string>
+    <string name="ErrorURL">Не верный URL</string>
+    <string name="NullData">Не удалось получить данные</string>
+    <string name="ErrorConnection">Error connection</string>
+    <string name="NullIntent">Пустой интент</string>
+    <string name="ServerWithNullParams">Сервис не получил нужные параметры</string>
+    <string name="EmptyData">Нулевые данные</string>
+    <string name="WrongURL">Не верный URL</string>
 </resources>

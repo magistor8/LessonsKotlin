@@ -49,7 +49,7 @@ class MainFragmentAdapter :
 
         fun bind(weather: Weather) {
             itemView.apply {
-                findViewById<TextView>(R.id.mainFragmentRecyclerItemTextView).text = weather.city.city
+                findViewById<TextView>(R.id.mainFragmentRecyclerItemTextView).text = weather.city.name
                 setOnClickListener {
                     onItemViewClickListener?.onItemViewClick(weather)
                 }

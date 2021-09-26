@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel
 import com.magistor8.weather.domain_model.Weather
 import com.magistor8.weather.repository.Repository
 import com.magistor8.weather.repository.RepositoryImpl
-import java.lang.IllegalArgumentException
 import java.lang.Thread.sleep
 
 class MainViewModel(
@@ -24,16 +23,12 @@ class MainViewModel(
         liveDataToObserve.value = AppState.Loading
         Thread {
             sleep(3000)
-            if ((1..2).random() == 1) {
-                weatherData = if (isRussian) {
-                    repositoryImpl.getWeatherFromLocalStorageRus()
-                } else {
-                    repositoryImpl.getWeatherFromLocalStorageWorld()
-                }
-                liveDataToObserve.postValue(AppState.Success(weatherData))
+            weatherData = if (isRussian) {
+                repositoryImpl.getWeatherFromLocalStorageRus()
             } else {
-                liveDataToObserve.postValue(AppState.Error(IllegalArgumentException()))
+                repositoryImpl.getWeatherFromLocalStorageWorld()
             }
+            liveDataToObserve.postValue(AppState.Success(weatherData))
         }.start()
     }
 

@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.snackbar.Snackbar
 import com.magistor8.weather.R
 import com.magistor8.weather.databinding.FragmentMainBinding
 import com.magistor8.weather.domain_model.Weather
-import com.magistor8.weather.view.details.DetailFragment
+import com.magistor8.weather.utils.showSnackBar
+import com.magistor8.weather.view.details.DetailsFragment
 import com.magistor8.weather.view_model.AppState
 import com.magistor8.weather.view_model.MainViewModel
 import java.lang.IllegalArgumentException
@@ -33,9 +33,9 @@ class MainFragment: Fragment() {
             activity?.supportFragmentManager?.apply {
                 this.let {
                     Bundle().apply {
-                        putParcelable(DetailFragment.BUNDLE_EXTRA, weather)
+                        putParcelable(DetailsFragment.BUNDLE_EXTRA, weather)
                         beginTransaction()
-                            .replace(R.id.container, DetailFragment.newInstance(this))
+                            .replace(R.id.container, DetailsFragment.newInstance(this))
                             .addToBackStack("")
                             .commit()
                         }
@@ -126,16 +126,6 @@ class MainFragment: Fragment() {
         binding.mainFragmentRecyclerView.visibility = View.VISIBLE
         binding.mainFragmentFAB.visibility = View.VISIBLE
     }
-
-    private fun View.showSnackBar(
-        text: String,
-        actionText: String,
-        action: (View) -> Unit,
-        length: Int = Snackbar.LENGTH_INDEFINITE
-    ) {
-        Snackbar.make(this, text, length).setAction(actionText, action).show()
-    }
-
 
 }
 
