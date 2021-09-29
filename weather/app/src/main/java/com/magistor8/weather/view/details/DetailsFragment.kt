@@ -15,6 +15,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.magistor8.weather.R
 import com.magistor8.weather.databinding.FragmentDetailsBinding
 import com.magistor8.weather.domain_model.Weather
+import com.magistor8.weather.utils.condition
 import com.magistor8.weather.utils.showSnackBar
 import com.magistor8.weather.view_model.AppState
 import com.magistor8.weather.view_model.DetailsViewModel
@@ -58,7 +59,7 @@ class DetailsFragment : Fragment() {
     private fun renderData(appState: AppState) {
         when (appState) {
             is AppState.Error -> {
-                binding.loadingLayout.visibility = View.GONE
+                binding.includedLoadingLayout.root.visibility = View.GONE
                 binding.mainView.visibility = View.VISIBLE
                 view?.showSnackBar(
                     getString(R.string.Error),
@@ -67,17 +68,34 @@ class DetailsFragment : Fragment() {
                 )
             }
             is AppState.Loading -> {
-                binding.loadingLayout.visibility = View.VISIBLE
+                binding.includedLoadingLayout.root.visibility = View.VISIBLE
                 binding.mainView.visibility = View.GONE
             }
             is AppState.SuccessDetails -> {
-                binding.loadingLayout.visibility = View.GONE
+                binding.includedLoadingLayout.root.visibility = View.GONE
                 binding.mainView.visibility = View.VISIBLE
                 val weather = appState.weatherData
+                //Показываем
                 showWeather(weather)
+                //Сохраняем в базу истории
+                saveWeather(weather)
                 Snackbar.make(binding.root, "Success", Snackbar.LENGTH_LONG).show()
             }
         }
+    }
+
+    private fun saveWeather(weather: Weather) {
+        viewModel.saveCityToDB(
+            Weather(
+                localWeather.city,
+                weather.temperature,
+                weather.feelsLike,
+                weather.condition,
+                weather.icon,
+                weather.wind,
+                weather.humidity
+            )
+        )
     }
 
     private fun ImageView.loadUrl(url: String) {
@@ -99,10 +117,10 @@ class DetailsFragment : Fragment() {
     private fun showWeather(weather: Weather) {
         with(binding) {
             cityName.text = localWeather.city.name
-            condition.text = weather.condition
+            condition.text = condition(requireContext(), weather.condition)
             temp.text = weather.temperature.toString()
-            wind.text = weather.wind.toString() + " м/с"
-            humidity.text = weather.humidity.toString() + "%"
+            wind.text = weather.wind.toString().plus(" м/с")
+            humidity.text = weather.humidity.toString().plus("%")
             feels_like.text = weather.feelsLike.toString()
             binding.icon.loadUrl("https://yastatic.net/weather/i/icons/blueye/color/svg/${weather.icon}.svg")
 

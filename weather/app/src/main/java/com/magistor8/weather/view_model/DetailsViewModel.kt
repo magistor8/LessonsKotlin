@@ -2,10 +2,10 @@ package com.magistor8.weather.view_model
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.magistor8.weather.App.Companion.getHistoryDao
+import com.magistor8.weather.domain_model.Weather
 import com.magistor8.weather.domain_model.WeatherDTO
-import com.magistor8.weather.repository.DetailsRepository
-import com.magistor8.weather.repository.DetailsRepositoryImpl
-import com.magistor8.weather.repository.RemoteDataSource
+import com.magistor8.weather.repository.*
 import com.magistor8.weather.utils.convertDtoToModel
 import retrofit2.Call
 import retrofit2.Callback
@@ -17,13 +17,18 @@ private const val CORRUPTED_DATA = "Неполные данные"
 
 class DetailsViewModel(
     val detailsLiveData: MutableLiveData<AppState> = MutableLiveData(),
-    private val detailsRepositoryImpl: DetailsRepository = DetailsRepositoryImpl(RemoteDataSource())
+    private val detailsRepositoryImpl: DetailsRepository = DetailsRepositoryImpl(RemoteDataSource()),
+    private val historyRepository: LocalRepository = LocalRepositoryImpl(getHistoryDao())
 ) : ViewModel() {
 
 
     fun getWeatherFromRemoteSource(lat: Double, lon: Double) {
         detailsLiveData.value = AppState.Loading
         detailsRepositoryImpl.getWeatherDetailsFromServer(lat, lon, callBack)
+    }
+
+    fun saveCityToDB(weather: Weather) {
+        historyRepository.saveEntity(weather)
     }
 
     private val callBack = object :

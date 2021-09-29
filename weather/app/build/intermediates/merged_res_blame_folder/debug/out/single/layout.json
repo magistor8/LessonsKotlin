@@ -12,16 +12,20 @@
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\fragment_details.xml"
     },
     {
-        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_details3.xml",
-        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\fragment_details3.xml"
-    },
-    {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\details_liq.xml",
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\details_liq.xml"
     },
     {
+        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_history.xml",
+        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\fragment_history.xml"
+    },
+    {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main_recycler_item.xml",
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\fragment_main_recycler_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_history_recycler_item.xml",
+        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\fragment_history_recycler_item.xml"
     },
     {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
@@ -32,7 +36,7 @@
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\fragment_main.xml"
     },
     {
-        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_details2.xml",
-        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\fragment_details2.xml"
+        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\loading_layout.xml",
+        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\loading_layout.xml"
     }
 ]

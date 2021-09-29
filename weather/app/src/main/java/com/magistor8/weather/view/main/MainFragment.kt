@@ -1,5 +1,6 @@
 package com.magistor8.weather.view.main
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,8 @@ import com.magistor8.weather.view.details.DetailsFragment
 import com.magistor8.weather.view_model.AppState
 import com.magistor8.weather.view_model.MainViewModel
 import java.lang.IllegalArgumentException
+
+private const val IS_WORLD_KEY = "LIST_OF_TOWNS_KEY"
 
 class MainFragment: Fragment() {
 
@@ -72,7 +75,16 @@ class MainFragment: Fragment() {
         }
         viewModel.getLiveData().observe(viewLifecycleOwner, observer)
         when (data) {
-            is AppState.Null -> viewModel.getWeatherFromLocalSourceRus()
+            is AppState.Null -> {
+                activity?.let {
+                    val isDataSetWorld: Boolean = it.getPreferences(Context.MODE_PRIVATE).getBoolean(IS_WORLD_KEY, false)
+                    if (isDataSetWorld) {
+                        changeWeatherDataSet()
+                    } else {
+                        viewModel.getWeatherFromLocalSourceRus()
+                    }
+                }
+            }
             else -> renderData(data)
         }
     }
@@ -85,7 +97,19 @@ class MainFragment: Fragment() {
             viewModel.getWeatherFromLocalSourceRus()
             binding.mainFragmentFAB.setImageResource(R.drawable.rus)
         }
+        //Сохраняем настройки
+        saveListOfTowns()
+
         isDataSetRus = !isDataSetRus
+    }
+
+    private fun saveListOfTowns() {
+        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
+        val editor = sharedPref?.edit()
+        editor?.let {
+            it.putBoolean(IS_WORLD_KEY, isDataSetRus)
+            it.apply()
+        }
     }
 
     override fun onDestroyView() {
@@ -96,11 +120,12 @@ class MainFragment: Fragment() {
 
     private fun renderData(appState: AppState) {
         with(binding) {
-            val loadingLayout = mainFragmentLoadingLayout
+            val loadingLayout = includedLoadingLayout.root
             when (appState) {
                 is AppState.Success -> {
                     loadingLayout.visibility = View.GONE
                     adapter.setWeather(appState.weatherData)
+                    if (!isDataSetRus) mainFragmentFAB.setImageResource(R.drawable.world)
                 }
                 is AppState.Loading -> {
                     loadingLayout.visibility = View.VISIBLE
