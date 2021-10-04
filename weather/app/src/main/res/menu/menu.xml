@@ -4,7 +4,11 @@
 
     <item
         android:id="@+id/menu_history"
-        android:title="История"
+        android:title="@string/History"
         android:icon="@drawable/history"
         app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_content_provider"
+        android:title="@string/content_provider"/>
 </menu>

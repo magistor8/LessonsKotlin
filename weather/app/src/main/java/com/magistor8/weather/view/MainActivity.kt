@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.magistor8.weather.R
+import com.magistor8.weather.lesson9.ContactsListFragment
 import com.magistor8.weather.utils.getSeason
 import com.magistor8.weather.view.history.HistoryFragment
 import com.magistor8.weather.view.main.MainFragment
@@ -43,6 +44,15 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.apply {
                     beginTransaction()
                         .add(R.id.container, HistoryFragment.newInstance())
+                        .addToBackStack("")
+                        .commitAllowingStateLoss()
+                }
+                true
+            }
+            R.id.menu_content_provider ->{
+                supportFragmentManager.apply {
+                    beginTransaction()
+                        .add(R.id.container, ContactsListFragment.newInstance())
                         .addToBackStack("")
                         .commitAllowingStateLoss()
                 }
