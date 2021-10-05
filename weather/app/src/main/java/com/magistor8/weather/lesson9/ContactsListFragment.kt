@@ -64,7 +64,7 @@ class ContactsListFragment: Fragment() {
         }
     }
 
-    // Проверяем, разрешено ли чтение контактов
+    // Проверяем, на разрешение
     private fun checkPermission(permissionType: String) : Boolean {
         context?.let {
             when {

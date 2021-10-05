@@ -2093,6 +2093,7 @@ id listMode
 id list_item
 id loadingLayout
 id mainFragmentFAB
+id mainFragmentFABLocation
 id mainFragmentRecyclerItemTextView
 id mainFragmentRecyclerView
 id mainFragmentRootView
@@ -2556,6 +2557,18 @@ string clear_text_end_icon_content_description
 string cloudy
 string content_provider
 string continuous_heavy_rain
+string dialog_address_get_weather
+string dialog_address_title
+string dialog_button_close
+string dialog_message_last_known_location
+string dialog_message_last_location_unknown
+string dialog_message_no_gps
+string dialog_rationale_decline
+string dialog_rationale_give_access
+string dialog_rationale_meaasge
+string dialog_rationale_title
+string dialog_title_gps_turned_off
+string dialog_title_no_gps
 string drizzle
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

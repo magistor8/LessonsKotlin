@@ -2092,6 +2092,7 @@ int id listMode 0x7f0800ea
 int id list_item 0x7f0800eb
 int id loadingLayout 0x7f0800ec
 int id mainFragmentFAB 0x7f0800ed
+int id mainFragmentFABLocation 0x7f0801e9
 int id mainFragmentRecyclerItemTextView 0x7f0800ef
 int id mainFragmentRecyclerView 0x7f0800f0
 int id mainFragmentRootView 0x7f0800f1
@@ -2555,6 +2556,18 @@ int string clear_text_end_icon_content_description 0x7f0e002d
 int string cloudy 0x7f0e0076
 int string content_provider 0x7f0e008a
 int string continuous_heavy_rain 0x7f0e0077
+int string dialog_address_get_weather 0x7f0e008b
+int string dialog_address_title 0x7f0e008c
+int string dialog_button_close 0x7f0e008d
+int string dialog_message_last_known_location 0x7f0e008e
+int string dialog_message_last_location_unknown 0x7f0e008f
+int string dialog_message_no_gps 0x7f0e0090
+int string dialog_rationale_decline 0x7f0e0091
+int string dialog_rationale_give_access 0x7f0e0092
+int string dialog_rationale_meaasge 0x7f0e0093
+int string dialog_rationale_title 0x7f0e0094
+int string dialog_title_gps_turned_off 0x7f0e0095
+int string dialog_title_no_gps 0x7f0e0096
 int string drizzle 0x7f0e0078
 int string error_icon_content_description 0x7f0e002e
 int string exposed_dropdown_menu_content_description 0x7f0e002f

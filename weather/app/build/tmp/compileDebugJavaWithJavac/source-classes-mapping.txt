@@ -1,34 +1,34 @@
-com/magistor8/weather/databinding/DetailsLiqBinding.java
- com.magistor8.weather.databinding.DetailsLiqBinding
-com/magistor8/weather/databinding/FragmentHistoryBinding.java
- com.magistor8.weather.databinding.FragmentHistoryBinding
-com/magistor8/weather/databinding/FragmentMainBinding.java
- com.magistor8.weather.databinding.FragmentMainBinding
 com/magistor8/weather/room/HistoryDao_Impl.java
  com.magistor8.weather.room.HistoryDao_Impl
  com.magistor8.weather.room.HistoryDao_Impl$1
  com.magistor8.weather.room.HistoryDao_Impl$2
  com.magistor8.weather.room.HistoryDao_Impl$3
-com/magistor8/weather/databinding/FragmentDetailsBinding.java
- com.magistor8.weather.databinding.FragmentDetailsBinding
-com/magistor8/weather/databinding/FragmentContactsRecyclerItemBinding.java
- com.magistor8.weather.databinding.FragmentContactsRecyclerItemBinding
-com/magistor8/weather/databinding/ActivityMainBinding.java
- com.magistor8.weather.databinding.ActivityMainBinding
+com/magistor8/weather/BuildConfig.java
+ com.magistor8.weather.BuildConfig
+com/magistor8/weather/room/HistoryDataBase_Impl.java
+ com.magistor8.weather.room.HistoryDataBase_Impl
+ com.magistor8.weather.room.HistoryDataBase_Impl$1
+com/magistor8/weather/databinding/DetailsLiqBinding.java
+ com.magistor8.weather.databinding.DetailsLiqBinding
 com/magistor8/weather/databinding/LoadingLayoutBinding.java
  com.magistor8.weather.databinding.LoadingLayoutBinding
 com/magistor8/weather/databinding/FragmentContactsBinding.java
  com.magistor8.weather.databinding.FragmentContactsBinding
-com/magistor8/weather/room/HistoryDataBase_Impl.java
- com.magistor8.weather.room.HistoryDataBase_Impl
- com.magistor8.weather.room.HistoryDataBase_Impl$1
+com/magistor8/weather/databinding/FragmentHistoryBinding.java
+ com.magistor8.weather.databinding.FragmentHistoryBinding
 com/magistor8/weather/databinding/DetailsFeelsLikeBinding.java
  com.magistor8.weather.databinding.DetailsFeelsLikeBinding
-com/magistor8/weather/BuildConfig.java
- com.magistor8.weather.BuildConfig
+com/magistor8/weather/databinding/FragmentMainBinding.java
+ com.magistor8.weather.databinding.FragmentMainBinding
 com/magistor8/weather/databinding/FragmentHistoryRecyclerItemBinding.java
  com.magistor8.weather.databinding.FragmentHistoryRecyclerItemBinding
+com/magistor8/weather/databinding/FragmentDetailsBinding.java
+ com.magistor8.weather.databinding.FragmentDetailsBinding
+com/magistor8/weather/databinding/FragmentContactsRecyclerItemBinding.java
+ com.magistor8.weather.databinding.FragmentContactsRecyclerItemBinding
 com/magistor8/weather/databinding/DetailsWindBinding.java
  com.magistor8.weather.databinding.DetailsWindBinding
+com/magistor8/weather/databinding/ActivityMainBinding.java
+ com.magistor8.weather.databinding.ActivityMainBinding
 com/magistor8/weather/databinding/FragmentMainRecyclerItemBinding.java
  com.magistor8.weather.databinding.FragmentMainRecyclerItemBinding
