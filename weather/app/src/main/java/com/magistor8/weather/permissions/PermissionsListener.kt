@@ -1,0 +1,3 @@
+package com.magistor8.weather.permissions
+
+sealed interface PermissionsListener
