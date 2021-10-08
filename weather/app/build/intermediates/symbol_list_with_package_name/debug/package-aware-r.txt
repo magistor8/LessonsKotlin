@@ -1978,6 +1978,7 @@ id collapseActionView
 id condition
 id confirm_button
 id constraint
+id contactsFragmentRecyclerview
 id container
 id content
 id contentPanel
@@ -2118,6 +2119,7 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id menu_content_provider
 id menu_history
 id message
 id middle
@@ -2423,6 +2425,8 @@ layout design_text_input_start_icon
 layout details_feels_like
 layout details_liq
 layout details_wind
+layout fragment_contacts
+layout fragment_contacts_recycler_item
 layout fragment_details
 layout fragment_history
 layout fragment_history_recycler_item
@@ -2505,6 +2509,7 @@ string EmptyData
 string Error
 string ErrorConnection
 string ErrorURL
+string History
 string NullData
 string NullIntent
 string Reload
@@ -2549,6 +2554,7 @@ string city_coordinates
 string clear
 string clear_text_end_icon_content_description
 string cloudy
+string content_provider
 string continuous_heavy_rain
 string drizzle
 string error_icon_content_description

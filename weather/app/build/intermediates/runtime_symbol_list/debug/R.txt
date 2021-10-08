@@ -1977,6 +1977,7 @@ int id collapseActionView 0x7f08007b
 int id condition 0x7f08007c
 int id confirm_button 0x7f08007d
 int id constraint 0x7f08007e
+int id contactsFragmentRecyclerview 0x7f0801e7
 int id container 0x7f08007f
 int id content 0x7f080080
 int id contentPanel 0x7f080081
@@ -2117,6 +2118,7 @@ int id material_timepicker_mode_button 0x7f080105
 int id material_timepicker_ok_button 0x7f080106
 int id material_timepicker_view 0x7f080107
 int id material_value_index 0x7f080108
+int id menu_content_provider 0x7f0801e8
 int id menu_history 0x7f0801e4
 int id message 0x7f080109
 int id middle 0x7f08010a
@@ -2422,6 +2424,8 @@ int layout design_text_input_start_icon 0x7f0b002c
 int layout details_feels_like 0x7f0b002d
 int layout details_liq 0x7f0b002e
 int layout details_wind 0x7f0b002f
+int layout fragment_contacts 0x7f0b007a
+int layout fragment_contacts_recycler_item 0x7f0b007b
 int layout fragment_details 0x7f0b0030
 int layout fragment_history 0x7f0b0077
 int layout fragment_history_recycler_item 0x7f0b0078
@@ -2504,6 +2508,7 @@ int string EmptyData 0x7f0e0000
 int string Error 0x7f0e0001
 int string ErrorConnection 0x7f0e0002
 int string ErrorURL 0x7f0e0003
+int string History 0x7f0e0089
 int string NullData 0x7f0e0004
 int string NullIntent 0x7f0e0005
 int string Reload 0x7f0e0006
@@ -2548,6 +2553,7 @@ int string city_coordinates 0x7f0e002c
 int string clear 0x7f0e0075
 int string clear_text_end_icon_content_description 0x7f0e002d
 int string cloudy 0x7f0e0076
+int string content_provider 0x7f0e008a
 int string continuous_heavy_rain 0x7f0e0077
 int string drizzle 0x7f0e0078
 int string error_icon_content_description 0x7f0e002e

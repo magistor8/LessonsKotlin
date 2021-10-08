@@ -32,4 +32,6 @@
     <string name="thunderstorm_with_rain">дождь с грозой</string>
     <string name="thunderstorm_with_hail">гроза с градом</string>
     <string name="undefined">не определено</string>
+    <string name="content_provider">Контакты</string>
+    <string name="History">История</string>
 </resources>
