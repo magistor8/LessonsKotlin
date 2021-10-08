@@ -10,68 +10,133 @@
 9        android:targetSdkVersion="30" />
 9-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.READ_CONTACTS" />
-11-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:5:5-72
-11-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:5:22-69
-12    <uses-permission android:name="android.permission.CALL_PHONE" />
-12-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:6:5-69
-12-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:6:22-66
-13    <uses-permission android:name="android.permission.INTERNET" />
-13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:5-67
-13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:22-64
-14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:8:5-79
-14-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:8:22-76
-15
-16    <application
-16-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:5-29:19
-17        android:name="com.magistor8.weather.App"
-17-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:9-28
-18        android:allowBackup="true"
-18-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.6.0] C:\Users\magis\.gradle\caches\transforms-3\edeb430ac0b0bea9c609d4daffe0d06e\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:extractNativeLibs="false"
-22        android:fullBackupContent="@xml/backup_descriptor"
-22-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:18:9-59
-23        android:icon="@mipmap/ic_launcher"
-23-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:9-43
-24        android:label="@string/app_name"
-24-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:14:9-41
-25        android:roundIcon="@mipmap/ic_launcher_round"
-25-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:15:9-54
-26        android:supportsRtl="true"
-26-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:16:9-35
-27        android:testOnly="true"
-28        android:theme="@style/Theme.Weather" >
-28-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:17:9-45
-29        <activity
-29-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:19:9-27:20
-30            android:name="com.magistor8.weather.view.MainActivity"
-30-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:20:13-46
-31            android:exported="true" >
-31-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:13-36
-32            <intent-filter>
-32-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:13-26:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:23:17-69
-33-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:23:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:25:17-77
-35-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:25:27-74
-36            </intent-filter>
-37        </activity>
-38
-39        <service
-39-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
-40            android:name="androidx.room.MultiInstanceInvalidationService"
-40-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
-41            android:directBootAware="true"
-41-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
-42            android:exported="false" />
-42-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
-43    </application>
-44
-45</manifest>
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the "MyLocation" functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.READ_CONTACTS" />
+17-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:5-72
+17-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:22-69
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:5-69
+18-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:22-66
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:5-67
+19-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:22-64
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
+23
+24    <uses-feature
+24-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
+25        android:glEsVersion="0x00020000"
+25-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
+26        android:required="true" />
+26-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
+27
+28    <queries>
+28-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
+29
+30        <!-- Needs to be explicitly declared on Android R+ -->
+31        <package android:name="com.google.android.apps.maps" />
+31-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
+31-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
+32    </queries>
+33
+34    <application
+34-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:15:5-46:19
+35        android:name="com.magistor8.weather.App"
+35-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:16:9-28
+36        android:allowBackup="true"
+36-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:17:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.6.0] C:\Users\magis\.gradle\caches\transforms-3\348f6d52d990d4fb4fcc5abc17a1cdcd\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+40        android:fullBackupContent="@xml/backup_descriptor"
+40-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:18:9-59
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:19:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:20:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:9-54
+44        android:supportsRtl="true"
+44-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:9-35
+45        android:testOnly="true"
+46        android:theme="@style/Theme.Weather" >
+46-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:23:9-45
+47
+48        <!--
+49             The API key for Google Maps-based APIs is defined as a string resource.
+50             (See the file "res/values/google_maps_api.xml").
+51             Note that the API key is linked to the encryption key used to sign the APK.
+52             You need a different API key for each encryption key, including the release key that is used to
+53             sign the APK for publishing.
+54             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+55        -->
+56        <meta-data
+56-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:33:9-35:55
+57            android:name="com.google.android.geo.API_KEY"
+57-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:34:13-58
+58            android:value="@string/google_maps_key" />
+58-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:35:13-52
+59
+60        <activity
+60-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:37:9-45:20
+61            android:name="com.magistor8.weather.view.MainActivity"
+61-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:38:13-46
+62            android:exported="true" >
+62-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:39:13-36
+63            <intent-filter>
+63-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:40:13-44:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:41:17-69
+64-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:41:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:43:17-77
+66-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:43:27-74
+67            </intent-filter>
+68        </activity>
+69        <!-- Needs to be explicitly declared on P+ -->
+70        <uses-library
+70-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
+71            android:name="org.apache.http.legacy"
+71-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
+72            android:required="false" />
+72-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
+73
+74        <service
+74-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+75            android:name="androidx.room.MultiInstanceInvalidationService"
+75-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+76            android:directBootAware="true"
+76-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+77            android:exported="false" />
+77-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+78
+79        <activity
+79-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+81            android:exported="false"
+81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+82-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+83
+84        <meta-data
+84-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\d51a76292ef8026979ff9c36d0a48ecc\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+85            android:name="com.google.android.gms.version"
+85-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\d51a76292ef8026979ff9c36d0a48ecc\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+86            android:value="@integer/google_play_services_version" />
+86-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\d51a76292ef8026979ff9c36d0a48ecc\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+87    </application>
+88
+89</manifest>

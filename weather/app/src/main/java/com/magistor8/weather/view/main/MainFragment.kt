@@ -1,6 +1,5 @@
 package com.magistor8.weather.view.main
 
-import android.Manifest
 import android.app.AlertDialog
 import android.content.Context
 import android.content.pm.PackageManager
@@ -12,7 +11,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -21,6 +19,8 @@ import com.magistor8.weather.R
 import com.magistor8.weather.databinding.FragmentMainBinding
 import com.magistor8.weather.domain_model.City
 import com.magistor8.weather.domain_model.Weather
+import com.magistor8.weather.permissions.LOCATION
+import com.magistor8.weather.permissions.Permissions
 import com.magistor8.weather.utils.showSnackBar
 import com.magistor8.weather.view.details.DetailsFragment
 import com.magistor8.weather.view_model.AppState
@@ -29,7 +29,6 @@ import java.io.IOException
 import java.lang.IllegalArgumentException
 
 private const val IS_WORLD_KEY = "LIST_OF_TOWNS_KEY"
-private const val LOCATION = Manifest.permission.ACCESS_FINE_LOCATION
 private const val REFRESH_PERIOD = 60000L
 private const val MINIMAL_DISTANCE = 100f
 
@@ -40,6 +39,8 @@ class MainFragment: Fragment() {
     get(){
         return _binding!!
     }
+    private lateinit var permissions: Permissions
+
     private var data: AppState = AppState.Null
     private val viewModel: MainViewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
@@ -94,12 +95,14 @@ class MainFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.mainFragmentRecyclerView.adapter = adapter
+        permissions = Permissions(requireActivity(), this)
         binding.mainFragmentFAB.setOnClickListener { changeWeatherDataSet() }
         binding.mainFragmentFABLocation.setOnClickListener {
             //Спрашиваем разрешение
-            if (checkPermission(LOCATION)) {
-                getLocation()
-            }
+            permissions.checkPermission(LOCATION) { getLocation() }
+//            if (checkPermission(LOCATION)) {
+//                getLocation()
+//            }
         }
         val observer = Observer<AppState> {
             data = it
@@ -121,46 +124,46 @@ class MainFragment: Fragment() {
         }
     }
 
-    // Проверяем, на разрешение
-    private fun checkPermission(permissionType: String) : Boolean {
-        context?.let {
-            when {
-                ContextCompat.checkSelfPermission(it, permissionType) ==
-                        PackageManager.PERMISSION_GRANTED -> {
-                    //Доступ есть
-                    return true
-                }
-                //Опционально: если нужно пояснение перед запросом разрешений
-                shouldShowRequestPermissionRationale(permissionType) -> {
-                    alertDialog(it, permissionType)
-                }
-                else -> {
-                    //Запрашиваем разрешение
-                    when(permissionType) {
-                        LOCATION -> regResLocation.launch(LOCATION)
-                    }
-                }
-            }
-        }
-        return false
-    }
 
-    private fun alertDialog(it: Context, permissionType: String) {
-        with(AlertDialog.Builder(it)) {
-            when (permissionType) {
-                LOCATION -> {
-                    this.setTitle("Доступ к геолокации")
-                        .setMessage("Для работы приложения необходим доступ к вашему местоположению")
-                        .setPositiveButton("Предоставить доступ") { _, _ ->
-                            regResLocation.launch(LOCATION)
-                        }
-                        .setNegativeButton("Не надо") { dialog, _ -> dialog.dismiss() }
-                        .create()
-                        .show()
-                }
-            }
-        }
-    }
+//    private fun checkPermission(permissionType: String) : Boolean {
+//        context?.let {
+//            when {
+//                ContextCompat.checkSelfPermission(it, permissionType) ==
+//                        PackageManager.PERMISSION_GRANTED -> {
+//                    //Доступ есть
+//                    return true
+//                }
+//                //Опционально: если нужно пояснение перед запросом разрешений
+//                shouldShowRequestPermissionRationale(permissionType) -> {
+//                    alertDialog(it, permissionType)
+//                }
+//                else -> {
+//                    //Запрашиваем разрешение
+//                    when(permissionType) {
+//                        LOCATION -> regResLocation.launch(LOCATION)
+//                    }
+//                }
+//            }
+//        }
+//        return false
+//    }
+
+//    private fun alertDialog(it: Context, permissionType: String) {
+//        with(AlertDialog.Builder(it)) {
+//            when (permissionType) {
+//                LOCATION -> {
+//                    this.setTitle("Доступ к геолокации")
+//                        .setMessage("Для работы приложения необходим доступ к вашему местоположению")
+//                        .setPositiveButton("Предоставить доступ") { _, _ ->
+//                            regResLocation.launch(LOCATION)
+//                        }
+//                        .setNegativeButton("Не надо") { dialog, _ -> dialog.dismiss() }
+//                        .create()
+//                        .show()
+//                }
+//            }
+//        }
+//    }
 
     private fun showDialog(title: String, message: String) {
         activity?.let {
@@ -173,13 +176,13 @@ class MainFragment: Fragment() {
         }
     }
 
-    private val regResLocation = registerForActivityResult(ActivityResultContracts.RequestPermission()) { result ->
-        if (result) {
-            getLocation()
-        } else {
-            alertDialog(requireContext(), LOCATION)
-        }
-    }
+//    private val regResLocation = registerForActivityResult(ActivityResultContracts.RequestPermission()) { result ->
+//        if (result) {
+//            getLocation()
+//        } else {
+//            alertDialog(requireContext(), LOCATION)
+//        }
+//    }
 
     private fun getLocation() {
         activity?.let { context ->
@@ -221,7 +224,7 @@ class MainFragment: Fragment() {
                     }
                 }
             } else {
-                alertDialog(context, LOCATION)
+                permissions.alertDialog(context, LOCATION)
             }
         }
     }

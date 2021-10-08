@@ -18,6 +18,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.magistor8.weather.databinding.FragmentContactsBinding
+import com.magistor8.weather.permissions.Permissions
 
 private const val CALL = Manifest.permission.CALL_PHONE
 private const val CONTACTS = Manifest.permission.READ_CONTACTS
@@ -26,6 +27,8 @@ class ContactsListFragment: Fragment() {
 
     private val numberIsNotSpecified = "default"
     private lateinit var phone: String
+
+    private lateinit var permissions: Permissions
 
     private var _binding: FragmentContactsBinding? = null
     private val binding get() = _binding!!
@@ -37,10 +40,7 @@ class ContactsListFragment: Fragment() {
             override fun onItemViewClick(contact: Contact) {
                 phone = contact.phones[0]
                 //Спрашиваем разрешение
-                if (checkPermission(CALL)) {
-                    //Звоним
-                    phoneCall(phone)
-                }
+                permissions.checkPermission(CONTACTS) { phoneCall(phone) }
             }
         }
     }
@@ -58,10 +58,9 @@ class ContactsListFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.contactsFragmentRecyclerview.adapter = adapter
+        permissions = Permissions(requireActivity(), this)
         //Спрашиваем разрешение
-        if (checkPermission(CONTACTS)) {
-            getContacts()
-        }
+        permissions.checkPermission(CONTACTS) { getContacts() }
     }
 
     // Проверяем, на разрешение

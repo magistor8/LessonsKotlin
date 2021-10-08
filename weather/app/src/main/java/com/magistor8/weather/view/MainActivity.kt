@@ -9,6 +9,7 @@ import com.magistor8.weather.lesson9.ContactsListFragment
 import com.magistor8.weather.utils.getSeason
 import com.magistor8.weather.view.history.HistoryFragment
 import com.magistor8.weather.view.main.MainFragment
+import com.magistor8.weather.view.map.MapsFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,20 +42,39 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
             R.id.menu_history ->{
-                supportFragmentManager.apply {
-                    beginTransaction()
-                        .add(R.id.container, HistoryFragment.newInstance())
-                        .addToBackStack("")
-                        .commitAllowingStateLoss()
+                val historyFragment = supportFragmentManager.findFragmentByTag(getString(R.string.historyFragment))
+                if (historyFragment==null) {
+                    supportFragmentManager.apply {
+                        beginTransaction()
+                            .add(R.id.container, HistoryFragment.newInstance(), getString(R.string.historyFragment))
+                            .addToBackStack("")
+                            .commitAllowingStateLoss()
+                    }
                 }
                 true
             }
             R.id.menu_content_provider ->{
-                supportFragmentManager.apply {
-                    beginTransaction()
-                        .add(R.id.container, ContactsListFragment.newInstance())
-                        .addToBackStack("")
-                        .commitAllowingStateLoss()
+                val contactsListFragment = supportFragmentManager.findFragmentByTag(getString(R.string.contactsListFragment))
+                if (contactsListFragment==null) {
+                    supportFragmentManager.apply {
+                        beginTransaction()
+                            .add(R.id.container, ContactsListFragment.newInstance(), getString(R.string.contactsListFragment))
+                            .addToBackStack("")
+                            .commitAllowingStateLoss()
+                    }
+                }
+                true
+            }
+
+            R.id.menu_google_maps -> {
+                val mapsFragment = supportFragmentManager.findFragmentByTag(getString(R.string.MapsFragment))
+                if (mapsFragment==null) {
+                    supportFragmentManager.apply {
+                        beginTransaction()
+                            .add(R.id.container, MapsFragment(), getString(R.string.MapsFragment))
+                            .addToBackStack("")
+                            .commitAllowingStateLoss()
+                    }
                 }
                 true
             }
