@@ -15,43 +15,54 @@
 11-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:5-25:19
-14        android:allowBackup="true"
-14-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:8:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.6.0] C:\Users\magis\.gradle\caches\transforms-3\a4bcf94456fc78faf25382220a59bd91\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:extractNativeLibs="false"
-18        android:fullBackupContent="@xml/backup_descriptor"
-18-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:14:9-59
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:9:9-43
-20        android:label="@string/app_name"
-20-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:9-54
-22        android:supportsRtl="true"
-22-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:9-35
-23        android:testOnly="true"
-24        android:theme="@style/Theme.Weather" >
-24-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:9-45
-25        <activity
-25-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:15:9-23:20
-26            android:name="com.magistor8.weather.view.MainActivity"
-26-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:16:13-46
-27            android:exported="true" >
-27-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:17:13-36
-28            <intent-filter>
-28-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:18:13-22:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:19:17-69
-29-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:19:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:17-77
-31-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:27-74
-32            </intent-filter>
-33        </activity>
-34    </application>
+13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:5-26:19
+14        android:name="com.magistor8.weather.App"
+14-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:8:9-28
+15        android:allowBackup="true"
+15-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.6.0] C:\Users\magis\.gradle\caches\transforms-3\edeb430ac0b0bea9c609d4daffe0d06e\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:fullBackupContent="@xml/backup_descriptor"
+19-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:15:9-59
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.Weather" >
+25-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:14:9-45
+26        <activity
+26-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:16:9-24:20
+27            android:name="com.magistor8.weather.view.MainActivity"
+27-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:17:13-46
+28            android:exported="true" >
+28-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:18:13-36
+29            <intent-filter>
+29-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:19:13-23:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:20:17-69
+30-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:20:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:17-77
+32-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
 35
-36</manifest>
+36        <service
+36-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+37            android:name="androidx.room.MultiInstanceInvalidationService"
+37-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+38            android:directBootAware="true"
+38-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+39            android:exported="false" />
+39-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\371aa0a520f3d6a983e452a351a26f77\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+40    </application>
+41
+42</manifest>

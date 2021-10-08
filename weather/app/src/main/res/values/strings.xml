@@ -12,4 +12,24 @@
     <string name="ServerWithNullParams">Сервис не получил нужные параметры</string>
     <string name="EmptyData">Нулевые данные</string>
     <string name="WrongURL">Не верный URL</string>
+    <string name="clear">ясно</string>
+    <string name="partly_cloudy">малооблачно</string>
+    <string name="cloudy">облачно с прояснениями</string>
+    <string name="overcast">пасмурно</string>
+    <string name="drizzle">морось</string>
+    <string name="light_rain">небольшой дождь</string>
+    <string name="rain">дождь</string>
+    <string name="moderate_rain">умеренно сильный дождь</string>
+    <string name="heavy_rain">сильный дождь</string>
+    <string name="continuous_heavy_rain">длительный сильный дождь</string>
+    <string name="showers">ливень</string>
+    <string name="wet_snow">дождь со снегом</string>
+    <string name="light_snow">небольшой снег</string>
+    <string name="snow">снег</string>
+    <string name="snow_showers">снегопад</string>
+    <string name="hail">град</string>
+    <string name="thunderstorm">гроза</string>
+    <string name="thunderstorm_with_rain">дождь с грозой</string>
+    <string name="thunderstorm_with_hail">гроза с градом</string>
+    <string name="undefined">не определено</string>
 </resources>

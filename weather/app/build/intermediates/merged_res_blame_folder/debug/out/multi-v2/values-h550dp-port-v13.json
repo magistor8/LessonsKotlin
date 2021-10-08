@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\magis\\.gradle\\caches\\transforms-3\\05b759ac6def3b95ee73148b51e20a6f\\transformed\\material-1.4.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\magis\\.gradle\\caches\\transforms-3\\2e0ddcd6e7e9f4c3e97cbbc25aba0df5\\transformed\\material-1.4.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
