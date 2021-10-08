@@ -20,6 +20,7 @@ import com.magistor8.weather.databinding.FragmentMainBinding
 import com.magistor8.weather.domain_model.City
 import com.magistor8.weather.domain_model.Weather
 import com.magistor8.weather.permissions.LOCATION
+import com.magistor8.weather.permissions.PermissionListener
 import com.magistor8.weather.permissions.Permissions
 import com.magistor8.weather.utils.showSnackBar
 import com.magistor8.weather.view.details.DetailsFragment
@@ -40,6 +41,11 @@ class MainFragment: Fragment() {
         return _binding!!
     }
     private lateinit var permissions: Permissions
+    private val locationPermissionListener = object : PermissionListener {
+        override fun callBack() {
+            getLocation()
+        }
+    }
 
     private var data: AppState = AppState.Null
     private val viewModel: MainViewModel by lazy {
@@ -99,10 +105,7 @@ class MainFragment: Fragment() {
         binding.mainFragmentFAB.setOnClickListener { changeWeatherDataSet() }
         binding.mainFragmentFABLocation.setOnClickListener {
             //Спрашиваем разрешение
-            permissions.checkPermission(LOCATION) { getLocation() }
-//            if (checkPermission(LOCATION)) {
-//                getLocation()
-//            }
+            permissions.checkPermission(LOCATION, locationPermissionListener)
         }
         val observer = Observer<AppState> {
             data = it
@@ -125,46 +128,6 @@ class MainFragment: Fragment() {
     }
 
 
-//    private fun checkPermission(permissionType: String) : Boolean {
-//        context?.let {
-//            when {
-//                ContextCompat.checkSelfPermission(it, permissionType) ==
-//                        PackageManager.PERMISSION_GRANTED -> {
-//                    //Доступ есть
-//                    return true
-//                }
-//                //Опционально: если нужно пояснение перед запросом разрешений
-//                shouldShowRequestPermissionRationale(permissionType) -> {
-//                    alertDialog(it, permissionType)
-//                }
-//                else -> {
-//                    //Запрашиваем разрешение
-//                    when(permissionType) {
-//                        LOCATION -> regResLocation.launch(LOCATION)
-//                    }
-//                }
-//            }
-//        }
-//        return false
-//    }
-
-//    private fun alertDialog(it: Context, permissionType: String) {
-//        with(AlertDialog.Builder(it)) {
-//            when (permissionType) {
-//                LOCATION -> {
-//                    this.setTitle("Доступ к геолокации")
-//                        .setMessage("Для работы приложения необходим доступ к вашему местоположению")
-//                        .setPositiveButton("Предоставить доступ") { _, _ ->
-//                            regResLocation.launch(LOCATION)
-//                        }
-//                        .setNegativeButton("Не надо") { dialog, _ -> dialog.dismiss() }
-//                        .create()
-//                        .show()
-//                }
-//            }
-//        }
-//    }
-
     private fun showDialog(title: String, message: String) {
         activity?.let {
             AlertDialog.Builder(it)
@@ -175,14 +138,6 @@ class MainFragment: Fragment() {
                 .show()
         }
     }
-
-//    private val regResLocation = registerForActivityResult(ActivityResultContracts.RequestPermission()) { result ->
-//        if (result) {
-//            getLocation()
-//        } else {
-//            alertDialog(requireContext(), LOCATION)
-//        }
-//    }
 
     private fun getLocation() {
         activity?.let { context ->

@@ -38,6 +38,7 @@ import com.magistor8.weather.repository.RemoteDataSource
 import com.magistor8.weather.utils.condition
 import com.magistor8.weather.utils.convertDtoToModel
 import com.magistor8.weather.permissions.LOCATION
+import com.magistor8.weather.permissions.PermissionListener
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -97,7 +98,7 @@ class MapsFragment : Fragment() {
             map.uiSettings.isMyLocationButtonEnabled = isPermissionGranted
         }
         //Спрашиваем разрешение
-        permissions.checkPermission(LOCATION) {}
+        permissions.checkPermission(LOCATION)
     }
 
     override fun onCreateView(

@@ -16,17 +16,19 @@ const val CONTACTS = Manifest.permission.READ_CONTACTS
 
 class Permissions(private val activity: Activity, private val fragment: Fragment) {
 
-    private lateinit var callBackFun: () -> Unit
+    private var callBackFun: PermissionListener? = null
 
     // Проверяем, на разрешение
-    fun checkPermission(permissionType: String, func : () -> Unit) {
-        callBackFun = func
+    fun checkPermission(permissionType: String, pl: PermissionListener? = null) {
+        callBackFun = pl
         fragment.context?.let {
             when {
                 ContextCompat.checkSelfPermission(it, permissionType) ==
                         PackageManager.PERMISSION_GRANTED -> {
                     //Доступ есть
-                    callBackFun()
+                    if (callBackFun != null) {
+                        callBackFun!!.callBack()
+                    }
                 }
                 //Опционально: если нужно пояснение перед запросом разрешений
                 shouldShowRequestPermissionRationale(activity, permissionType) -> {
@@ -84,7 +86,9 @@ class Permissions(private val activity: Activity, private val fragment: Fragment
 
     private val regResLocation = fragment.registerForActivityResult(ActivityResultContracts.RequestPermission()) { result ->
         if (result) {
-            //callBackFun
+            if (callBackFun != null) {
+                callBackFun!!.callBack()
+            }
         } else {
             fragment.context?.let {
                 alertDialog(it, LOCATION)
@@ -93,7 +97,9 @@ class Permissions(private val activity: Activity, private val fragment: Fragment
     }
     private val regResContacts = fragment.registerForActivityResult(ActivityResultContracts.RequestPermission()) { result ->
         if (result) {
-            //callBackFun
+            if (callBackFun != null) {
+                callBackFun!!.callBack()
+            }
         } else {
             fragment.context?.let {
                 alertDialog(it, CONTACTS)
@@ -103,7 +109,9 @@ class Permissions(private val activity: Activity, private val fragment: Fragment
 
     private val regResCall = fragment.registerForActivityResult(ActivityResultContracts.RequestPermission()) { result ->
         if (result) {
-            //callBackFun
+            if (callBackFun != null) {
+                callBackFun!!.callBack()
+            }
         } else {
             fragment.context?.let {
                 alertDialog(it, CALL)
