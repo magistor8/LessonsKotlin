@@ -2663,6 +2663,7 @@ string contactsListFragment
 string content_provider
 string continuous_heavy_rain
 string default_address
+string default_web_client_id
 string dialog_address_get_weather
 string dialog_address_title
 string dialog_button_close
@@ -2680,9 +2681,15 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fcm_fallback_notification_channel_label
 string feels_like_label
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
 string google_maps
 string google_maps_key
+string google_storage_bucket
 string hail
 string heavy_rain
 string hide_bottom_view_on_scroll_behavior
@@ -2755,6 +2762,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string project_id
 string rain
 string search_menu_title
 string showers

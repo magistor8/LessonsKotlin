@@ -48,12 +48,12 @@
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\drawable_wind.png.flat",
-        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\drawable\\wind.png"
-    },
-    {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\layout_infowindowlayout.xml.flat",
         "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\layout\\infowindowlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\drawable_wind.png.flat",
+        "source": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\src\\main\\res\\drawable\\wind.png"
     },
     {
         "merged": "C:\\Users\\magis\\AndroidStudioProjects\\LessonsKotlin\\LessonsKotlin\\weather\\app\\build\\intermediates\\merged_res\\debug\\drawable_autumn.png.flat",
