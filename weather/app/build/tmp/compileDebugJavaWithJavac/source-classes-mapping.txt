@@ -2,6 +2,8 @@ com/magistor8/weather/databinding/DetailsLiqBinding.java
  com.magistor8.weather.databinding.DetailsLiqBinding
 com/magistor8/weather/databinding/FragmentHistoryBinding.java
  com.magistor8.weather.databinding.FragmentHistoryBinding
+com/magistor8/weather/databinding/FragmentMapsBinding.java
+ com.magistor8.weather.databinding.FragmentMapsBinding
 com/magistor8/weather/databinding/FragmentMainBinding.java
  com.magistor8.weather.databinding.FragmentMainBinding
 com/magistor8/weather/room/HistoryDao_Impl.java
@@ -28,6 +30,8 @@ com/magistor8/weather/BuildConfig.java
  com.magistor8.weather.BuildConfig
 com/magistor8/weather/databinding/FragmentHistoryRecyclerItemBinding.java
  com.magistor8.weather.databinding.FragmentHistoryRecyclerItemBinding
+com/magistor8/weather/databinding/InfowindowlayoutBinding.java
+ com.magistor8.weather.databinding.InfowindowlayoutBinding
 com/magistor8/weather/databinding/DetailsWindBinding.java
  com.magistor8.weather.databinding.DetailsWindBinding
 com/magistor8/weather/databinding/FragmentMainRecyclerItemBinding.java
