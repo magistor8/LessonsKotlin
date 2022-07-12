@@ -10,133 +10,254 @@
 9        android:targetSdkVersion="30" />
 9-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml
 10
-11    <!--
-12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-13         Google Maps Android API v2, but you must specify either coarse or fine
-14         location permissions for the "MyLocation" functionality.
-15    -->
-16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:5-79
-16-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:22-76
-17    <uses-permission android:name="android.permission.READ_CONTACTS" />
-17-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:5-72
-17-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:22-69
-18    <uses-permission android:name="android.permission.CALL_PHONE" />
-18-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:5-69
-18-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:22-66
-19    <uses-permission android:name="android.permission.INTERNET" />
-19-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:5-67
-19-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:22-64
-20
-21    <!-- Include required permissions for Google Maps API to run. -->
-22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
-23
-24    <uses-feature
-24-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
-25        android:glEsVersion="0x00020000"
-25-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
-26        android:required="true" />
-26-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
-27
-28    <queries>
-28-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
-29
-30        <!-- Needs to be explicitly declared on Android R+ -->
-31        <package android:name="com.google.android.apps.maps" />
-31-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
-31-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
-32    </queries>
-33
-34    <application
-34-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:15:5-46:19
-35        android:name="com.magistor8.weather.App"
-35-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:16:9-28
-36        android:allowBackup="true"
-36-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:17:9-35
-37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.6.0] C:\Users\magis\.gradle\caches\transforms-3\348f6d52d990d4fb4fcc5abc17a1cdcd\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
-38        android:debuggable="true"
-39        android:extractNativeLibs="false"
-40        android:fullBackupContent="@xml/backup_descriptor"
-40-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:18:9-59
-41        android:icon="@mipmap/ic_launcher"
-41-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:19:9-43
-42        android:label="@string/app_name"
-42-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:20:9-41
-43        android:roundIcon="@mipmap/ic_launcher_round"
-43-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:9-54
-44        android:supportsRtl="true"
-44-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:9-35
-45        android:testOnly="true"
-46        android:theme="@style/Theme.Weather" >
-46-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:23:9-45
-47
-48        <!--
-49             The API key for Google Maps-based APIs is defined as a string resource.
-50             (See the file "res/values/google_maps_api.xml").
-51             Note that the API key is linked to the encryption key used to sign the APK.
-52             You need a different API key for each encryption key, including the release key that is used to
-53             sign the APK for publishing.
-54             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-55        -->
-56        <meta-data
-56-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:33:9-35:55
-57            android:name="com.google.android.geo.API_KEY"
-57-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:34:13-58
-58            android:value="@string/google_maps_key" />
-58-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:35:13-52
-59
-60        <activity
-60-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:37:9-45:20
-61            android:name="com.magistor8.weather.view.MainActivity"
-61-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:38:13-46
-62            android:exported="true" >
-62-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:39:13-36
-63            <intent-filter>
-63-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:40:13-44:29
-64                <action android:name="android.intent.action.MAIN" />
-64-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:41:17-69
-64-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:41:25-66
-65
-66                <category android:name="android.intent.category.LAUNCHER" />
-66-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:43:17-77
-66-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:43:27-74
-67            </intent-filter>
-68        </activity>
-69        <!-- Needs to be explicitly declared on P+ -->
-70        <uses-library
-70-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
-71            android:name="org.apache.http.legacy"
-71-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
-72            android:required="false" />
-72-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\bfa3a43349898aaecdac8a352d9975fc\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
-73
-74        <service
-74-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
-75            android:name="androidx.room.MultiInstanceInvalidationService"
-75-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
-76            android:directBootAware="true"
-76-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
-77            android:exported="false" />
-77-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\ac7ff69e7d5867c30d306a6ef7c68b1b\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
-78
-79        <activity
-79-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-81            android:exported="false"
-81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-82-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\def7a9994d018da811e2aaee6c77d0ad\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-83
-84        <meta-data
-84-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\d51a76292ef8026979ff9c36d0a48ecc\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-85            android:name="com.google.android.gms.version"
-85-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\d51a76292ef8026979ff9c36d0a48ecc\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-86            android:value="@integer/google_play_services_version" />
-86-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\d51a76292ef8026979ff9c36d0a48ecc\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-87    </application>
-88
-89</manifest>
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.READ_CONTACTS" />
+12-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:6:5-72
+12-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:6:22-69
+13    <uses-permission android:name="android.permission.CALL_PHONE" />
+13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:5-69
+13-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:7:22-66
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:8:22-64
+15
+16    <!-- Include required permissions for Google Maps API to run. -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
+17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
+22
+23    <queries>
+23-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
+24
+25        <!-- Needs to be explicitly declared on Android R+ -->
+26        <package android:name="com.google.android.apps.maps" />
+26-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
+26-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
+27    </queries>
+28
+29    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+29-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+29-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:22-65
+30    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+30-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+30-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+31
+32    <application
+32-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:10:5-38:19
+33        android:name="com.magistor8.weather.App"
+33-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:11:9-28
+34        android:allowBackup="true"
+34-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:12:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.6.0] C:\Users\magis\.gradle\caches\transforms-3\07f023467b2ae921adfa7a6076123035\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:fullBackupContent="@xml/backup_descriptor"
+38-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:13:9-59
+39        android:icon="@mipmap/ic_launcher"
+39-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:14:9-43
+40        android:label="@string/app_name"
+40-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:15:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:16:9-54
+42        android:supportsRtl="true"
+42-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:17:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.Weather" >
+44-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:18:9-45
+45        <service android:name="com.magistor8.weather.services.MyFirebaseMessagingService" >
+45-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:20:9-24:19
+45-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:20:18-69
+46            <intent-filter>
+46-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:13-23:29
+47                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+47-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:17-78
+47-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:25-75
+48            </intent-filter>
+49        </service>
+50
+51        <meta-data
+51-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:26:9-28:55
+52            android:name="com.google.android.geo.API_KEY"
+52-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:27:13-58
+53            android:value="@string/google_maps_key" />
+53-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:28:13-52
+54
+55        <activity
+55-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:30:9-37:20
+56            android:name="com.magistor8.weather.view.MainActivity"
+56-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:31:13-46
+57            android:exported="true" >
+57-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:32:13-36
+58            <intent-filter>
+58-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:33:13-36:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:34:17-69
+59-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:34:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:35:17-77
+61-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:35:27-74
+62            </intent-filter>
+63        </activity>
+64        <!-- Needs to be explicitly declared on P+ -->
+65        <uses-library
+65-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
+66            android:name="org.apache.http.legacy"
+66-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
+67            android:required="false" />
+67-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\magis\.gradle\caches\transforms-3\081b7446162644a4b5eadd5b9bcfd24b\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
+68
+69        <service
+69-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\cd7aa2c96911cf54566dc587ecd3e38f\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+70            android:name="androidx.room.MultiInstanceInvalidationService"
+70-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\cd7aa2c96911cf54566dc587ecd3e38f\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+71            android:directBootAware="true"
+71-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\cd7aa2c96911cf54566dc587ecd3e38f\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+72            android:exported="false" />
+72-->[androidx.room:room-runtime:2.3.0] C:\Users\magis\.gradle\caches\transforms-3\cd7aa2c96911cf54566dc587ecd3e38f\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+73        <service
+73-->[com.google.firebase:firebase-messaging-ktx:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\3ed73a06f62ba5674226e6c360bb367f\transformed\jetified-firebase-messaging-ktx-22.0.0\AndroidManifest.xml:26:9-32:19
+74            android:name="com.google.firebase.components.ComponentDiscoveryService"
+74-->[com.google.firebase:firebase-messaging-ktx:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\3ed73a06f62ba5674226e6c360bb367f\transformed\jetified-firebase-messaging-ktx-22.0.0\AndroidManifest.xml:27:13-84
+75            android:directBootAware="true"
+75-->[com.google.firebase:firebase-common:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\e237fc13e7194494a00212045dc25060\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+76            android:exported="false" >
+76-->[com.google.firebase:firebase-messaging-ktx:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\3ed73a06f62ba5674226e6c360bb367f\transformed\jetified-firebase-messaging-ktx-22.0.0\AndroidManifest.xml:28:13-37
+77            <meta-data
+77-->[com.google.firebase:firebase-messaging-ktx:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\3ed73a06f62ba5674226e6c360bb367f\transformed\jetified-firebase-messaging-ktx-22.0.0\AndroidManifest.xml:29:13-31:85
+78                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+78-->[com.google.firebase:firebase-messaging-ktx:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\3ed73a06f62ba5674226e6c360bb367f\transformed\jetified-firebase-messaging-ktx-22.0.0\AndroidManifest.xml:30:17-126
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-messaging-ktx:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\3ed73a06f62ba5674226e6c360bb367f\transformed\jetified-firebase-messaging-ktx-22.0.0\AndroidManifest.xml:31:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\6684b18cf1e97bae8a5e003cba54bb2c\transformed\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
+81                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+81-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\6684b18cf1e97bae8a5e003cba54bb2c\transformed\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:16:17-113
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\6684b18cf1e97bae8a5e003cba54bb2c\transformed\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:17:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+84                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+84-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\magis\.gradle\caches\transforms-3\f856d52c2c213789216cd71abcb5cb23\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+87                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+87-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\magis\.gradle\caches\transforms-3\f856d52c2c213789216cd71abcb5cb23\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\magis\.gradle\caches\transforms-3\f856d52c2c213789216cd71abcb5cb23\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\dd544109569f006bcf4cced663e40fdf\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+90                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+90-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\dd544109569f006bcf4cced663e40fdf\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\dd544109569f006bcf4cced663e40fdf\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+92        </service>
+93
+94        <receiver
+94-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+95            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+95-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+96            android:exported="true"
+96-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+97            android:permission="com.google.android.c2dm.permission.SEND" >
+97-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+98            <intent-filter>
+98-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+99                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+99-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:17-81
+99-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:25-78
+100            </intent-filter>
+101        </receiver>
+102        <!--
+103             FirebaseMessagingService performs security checks at runtime,
+104             but set to not exported to explicitly avoid allowing another app to call it.
+105        -->
+106        <service
+106-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+107            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+107-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+108            android:directBootAware="true"
+108-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+109            android:exported="false" >
+109-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\magis\.gradle\caches\transforms-3\a07c70fc803a9006ac72180859914f61\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+110            <intent-filter android:priority="-500" >
+110-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:21:13-23:29
+111                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+111-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:17-78
+111-->C:\Users\magis\AndroidStudioProjects\LessonsKotlin\LessonsKotlin\weather\app\src\main\AndroidManifest.xml:22:25-75
+112            </intent-filter>
+113        </service>
+114
+115        <provider
+115-->[com.google.firebase:firebase-common:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\e237fc13e7194494a00212045dc25060\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+116            android:name="com.google.firebase.provider.FirebaseInitProvider"
+116-->[com.google.firebase:firebase-common:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\e237fc13e7194494a00212045dc25060\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+117            android:authorities="com.magistor8.weather.firebaseinitprovider"
+117-->[com.google.firebase:firebase-common:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\e237fc13e7194494a00212045dc25060\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+118            android:directBootAware="true"
+118-->[com.google.firebase:firebase-common:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\e237fc13e7194494a00212045dc25060\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+119            android:exported="false"
+119-->[com.google.firebase:firebase-common:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\e237fc13e7194494a00212045dc25060\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+120            android:initOrder="100" />
+120-->[com.google.firebase:firebase-common:20.0.0] C:\Users\magis\.gradle\caches\transforms-3\e237fc13e7194494a00212045dc25060\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+121
+122        <activity
+122-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\4b8e40852964d9e22fe90c74a7818e32\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+123            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+123-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\4b8e40852964d9e22fe90c74a7818e32\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+124            android:exported="false"
+124-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\4b8e40852964d9e22fe90c74a7818e32\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+125-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\magis\.gradle\caches\transforms-3\4b8e40852964d9e22fe90c74a7818e32\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+126
+127        <meta-data
+127-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\magis\.gradle\caches\transforms-3\9d09cfc23419368b504d48afb77a1726\transformed\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+128            android:name="com.google.android.gms.version"
+128-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\magis\.gradle\caches\transforms-3\9d09cfc23419368b504d48afb77a1726\transformed\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+129            android:value="@integer/google_play_services_version" />
+129-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\magis\.gradle\caches\transforms-3\9d09cfc23419368b504d48afb77a1726\transformed\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+130
+131        <service
+131-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7089666487ee777e73052dd70fc59d88\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+132            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+132-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7089666487ee777e73052dd70fc59d88\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+133            android:exported="false" >
+133-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7089666487ee777e73052dd70fc59d88\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+134            <meta-data
+134-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7089666487ee777e73052dd70fc59d88\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+135                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+135-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7089666487ee777e73052dd70fc59d88\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+136                android:value="cct" />
+136-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7089666487ee777e73052dd70fc59d88\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+137        </service>
+138        <service
+138-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7bb1e4cc46df7e538f9a6ed06b14aca5\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+139            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+139-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7bb1e4cc46df7e538f9a6ed06b14aca5\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+140            android:exported="false"
+140-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7bb1e4cc46df7e538f9a6ed06b14aca5\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+141            android:permission="android.permission.BIND_JOB_SERVICE" >
+141-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7bb1e4cc46df7e538f9a6ed06b14aca5\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+142        </service>
+143
+144        <receiver
+144-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7bb1e4cc46df7e538f9a6ed06b14aca5\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+145            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+145-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7bb1e4cc46df7e538f9a6ed06b14aca5\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+146            android:exported="false" />
+146-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\magis\.gradle\caches\transforms-3\7bb1e4cc46df7e538f9a6ed06b14aca5\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+147    </application>
+148
+149</manifest>

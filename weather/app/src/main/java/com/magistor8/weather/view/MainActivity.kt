@@ -2,8 +2,10 @@ package com.magistor8.weather.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import com.google.firebase.messaging.FirebaseMessaging
 import com.magistor8.weather.R
 import com.magistor8.weather.lesson9.ContactsListFragment
 import com.magistor8.weather.utils.getSeason
@@ -23,6 +25,14 @@ class MainActivity : AppCompatActivity() {
 
             ).addToBackStack("").commit()
         }
+
+        //Токен нотификации
+        FirebaseMessaging.getInstance().token.addOnCompleteListener { it->
+            if(it.isSuccessful){
+                Log.d("mylogs",it.result.toString())
+            }
+        }
+
     }
 
     private fun setStartTheme() {
